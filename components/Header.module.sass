@@ -1,0 +1,234 @@
+@import "styles/common"
+
+.container
+  padding-top: 80px
+  position: relative
+  overflow: hidden
+  .bg_banner
+    background-image: url(/assets/banner/im_banner.png)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: bottom center
+    max-height: 100vh
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    z-index: -1
+
+  .contentMenu
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    height: 80px
+    line-height: 80px
+    background: rgba(0,0 ,0 ,0.5 )
+    z-index: 20
+    .contentDetail
+      width: 100%
+      display: flex
+      align-items: center
+      justify-content: space-between
+    .btn_wp
+      color: #FFF
+      border: 2px solid #EBB72D
+      font-size: 16px
+      line-height: 18px
+      padding: 10px 40px
+      border-radius: 60px
+    .logo
+      display: flex
+      align-items: center
+      p
+        font-size: 30px
+        line-height: 32px
+        color: #FFF
+        font-weight: 700
+        padding-left: 14px
+    nav ul
+      display: flex
+      align-items: center
+      justify-content: space-between
+      li
+        @media (min-width: 1280px)
+          padding: 0px 8px
+        @media (min-width: 1440px)
+          padding: 0px 12px
+          
+        a
+          color: #FFF
+          font-size: 16px
+          line-height: 18px
+          font-weight: 400
+
+  .title
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    background: linear-gradient(180deg, #FFFFFF 32.38%, rgba(255, 255, 255, 0) 85.22%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    background-clip: text
+    text-fill-color: transparent
+    @media (max-width: 640px)
+      margin-top: 40px
+    p
+      font-weight: 900
+      @media (min-width: 0px)
+        font-size: 100px
+        line-height: 140px
+      @media (min-width: 414px)
+        font-size: 120px
+        line-height: 140px
+      @media (min-width: 540px)
+        font-size: 140px
+        line-height: 150px
+      @media (min-width: 640px)
+        font-size: 160px
+        line-height: 220px
+      @media (min-width: 992px)
+        font-size: 200px
+        line-height: 220px
+      @media (min-width: 1440px)
+        font-size: 260px
+        line-height: 274px
+    span
+      font-weight: 700
+      background: linear-gradient(180deg, #FFFFFF 32.38%, rgba(255, 255, 255, 0) 85.22%)
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+      background-clip: text
+      text-fill-color: transparent
+      margin-left: 750px
+      margin-top: -40px
+      @media (min-width: 0px)
+        font-size: 18px
+        line-height: 24px
+        margin-left: 100px
+      @media (min-width: 414px)
+        font-size: 18px
+        line-height: 24px
+        margin-left: 100px
+      @media (min-width: 540px)
+        font-size: 18px
+        line-height: 24px
+        margin-left: 200px
+      @media (min-width: 640px)
+        font-size: 20px
+        line-height: 24px
+        margin-left: 300px
+      @media (min-width: 768px)
+        font-size: 24px
+        line-height: 28px
+        margin-left: 300px
+      @media (min-width: 992px)
+        font-size: 28px
+        line-height: 32px
+        margin-left: 500px
+      @media (min-width: 1280px)
+        font-size: 28px
+        line-height: 32px
+      @media (min-width: 1440px)
+        font-size: 34px
+        line-height: 36px
+
+
+
+  .blockAvt
+    display: flex
+    align-items: center
+    justify-content: center
+    @media ( max-width: 540px)
+      flex-direction: column
+      margin-top: 20px
+    @media (min-width: 540px)
+      padding-bottom: 200px
+      flex-direction: row
+    @media (min-width: 1440px)
+      margin-top: 12px
+    .avt
+      @media (max-width: 540px)
+        order: -1
+      @media (min-width: 540px)
+        max-width: 200px
+      @media (min-width: 768px)
+        max-width: 250px
+      @media (min-width: 992px)
+        max-width: 300px
+      @media (min-width: 1440px)
+        max-width: 100%
+        
+    .content_vector
+      position: relative
+      z-index: -1
+      @media (max-width: 540px)
+        width: 100%
+      @media (min-width: 414px)
+        padding: 0px !important
+      @media (min-width: 540px)
+        padding-top: 80px
+      img
+        @media (max-width: 540px)
+          display: none
+        @media (min-width: 540px)
+          width: 60%
+        @media (min-width: 1280px)
+          width: 100%
+      .text
+        text-align: center
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        p
+          font-weight: 600
+          color: #FFF
+          margin-top: 8px
+          @media (min-width: 768px)
+            font-size: 20px
+            line-height: 24px
+          @media (min-width: 992px)
+            font-size: 24px
+            line-height: 26px
+        a
+          color: #FFF
+          font-weight: 600
+          margin-top: 10px
+          padding: 10px 40px
+          border: 2px solid #EBB72D
+          border-radius: 60px
+          @media (max-width: 540px)
+            width: 100%
+          @media (min-width: 540px)
+            font-size: 16px
+            line-height: 24px
+            padding: 4px 30px
+          @media (min-width: 640px)
+            font-size: 20px
+            line-height: 24px
+          @media (min-width: 992px)
+            font-size: 24px
+            line-height: 26px
+      .text_right
+        @media (min-width: 1024px)
+          transform: translateX(40px)
+        @media (min-width: 1280px)
+          transform: translateX(124px)
+      .text_right > a
+          border: 2px solid #29B5FF
+
+    .vector_left
+      text-align: -webkit-right
+      @media (min-width: 414px)
+        padding-top: 120px
+      @media (min-width: 540px)
+        padding-top: 140px
+
+      .text_left
+        @media (min-width: 1024px)
+          transform: translateX(-30px)
+        @media (min-width: 1280px)
+          transform: translateX(-120px)

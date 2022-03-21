@@ -1,0 +1,88 @@
+
+.contentMenu
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    height: 80px
+    line-height: 80px
+    background: rgba(0,0 ,0 ,0.5 )
+    z-index: 20
+    .contentDetail
+        display: flex
+        justify-content: space-between
+        align-items: center
+        height: 100%
+        margin: 0 auto
+        .logo
+            display: flex
+            align-items: center
+            p
+                font-size: 30px
+                line-height: 32px
+                color: #FFF
+                font-weight: 700
+                padding-left: 14px
+        .icon_Bar
+            width: 30px
+            cursor: pointer
+            
+        nav ul
+            position: fixed
+            top: 0
+            right: 0
+            bottom: 0
+            width: 320px
+            padding: 20px 10px
+            background: rgba(0,0 ,0 ,0.8)
+            z-index: 20
+            transition: 0.5s
+            li
+                line-height: 20px
+                padding: 16px 20px
+                transition: 0.3s
+                a
+                    color: #FFF
+                    font-size: 20px
+                    line-height: 24px
+                .btn_wp
+                    color: #FFF
+                    border: 2px solid #EBB72D
+                    font-size: 16px
+                    line-height: 18px
+                    padding: 10px 80px
+                    border-radius: 60px
+            li:hover
+                opacity: 0.5
+            .ic_close
+                display: flex
+                align-items: center
+                justify-content: end
+                cursor: pointer
+                padding: 0px 20px
+                img
+                    width: 20px
+
+
+    .bg_layer
+        position: fixed
+        top: 0
+        left: 0
+        bottom: 0
+        right: 0
+        background: rgba(0,0 ,0 ,0.5)
+        transition: 0.5s
+        
+    .isShow 
+        transform: translateX(0%)
+        opacity: 1
+    .show 
+        transform: translateX(100%)
+        opacity: 0
+    .overlay
+        opacity: 1
+        z-index: 1
+    .isOverlay
+        opacity: 0
+        z-index: -1
+        display: none
